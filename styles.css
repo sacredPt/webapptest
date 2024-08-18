@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.info-container {
+    text-align: center;
+    padding: 20px;
+    background: #1b1b1b;
+    color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+}
+
+.menu {
+    text-align: center;
+    padding: 10px;
+    background: #1b1b1b;
+    color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+}
+
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    vertical-align: center;
+    padding-right: 15px;
+}
+
+.balance {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.info-container b {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.balance-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+img#clickImage {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+img#clickImage:active {
+    transform: scale(0.95);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.status-a {
+    font-size: 14;
+    font-weight: bold;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.action {
+    flex: 1;
+    max-width: 250px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 250px;
+    height: 15px;
+}
+
+.action:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.action:active {
+    background-color: #004085;
+    transform: scale(0.95);
+}
+
+.reset {
+    background-color: #dc3545;
+}
+
+.reset:hover {
+    background-color: #c82333;
+}
+
+.reset:active {
+    background-color: #bd2130;
+}
+
+.upgrade-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.upgrade-option {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upgrade-option:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.upgrade-option:active {
+    background-color: #004085;
+    transform: scale(0.95);
+}
+
+.back {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.back:active {
+    background-color: #1e7e34;
+    transform: scale(0.95);
+}
+
+.click-info {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.click-info.show {
+    opacity: 1;
+    transform: translateY(-30px);
+}
